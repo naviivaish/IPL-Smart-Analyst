@@ -23,7 +23,7 @@ Model training and evaluation
 Prediction generation
 Visualization through web dashboard
 
-#📊 Sample Use Cases
+**📊 Sample Use Cases**
 Predict the winner of an IPL match
 Analyze team strengths and weaknesses
 Explore historical match trends
