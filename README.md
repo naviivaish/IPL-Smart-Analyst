@@ -1,47 +1,56 @@
 # 🏏 IPL Smart Analyst
 
-**IPL Smart Analyst** is a machine learning-powered web application that analyzes Indian Premier League (IPL) data to provide match predictions, team insights, and interactive visualizations.
+An end-to-end Machine Learning web application that analyzes IPL data to generate match predictions, team insights, and player performance analytics through an interactive dashboard.
 
 ---
 
 ## 🚀 Features
 
-- 📊 **Match outcome prediction** using ML models  
-- 📈 **Team performance analysis** and comparisons  
-- 🎯 **Insights based on match conditions** (teams, venue, etc.)  
-- 📉 **Interactive data visualizations**  
-- ⚡ **Simple and clean UI** built with Streamlit  
+### 🔮 Match Prediction
+- Predicts match winner using a trained ML model
+- Considers:
+  - Teams
+  - Toss winner & decision
+  - Venue
+  - Historical performance stats
+- Displays win probability with confidence bar
+
+### 📊 Team Analysis
+- Compare two teams based on:
+  - Total wins
+  - Win percentage
+  - Batting strike rate
+  - Bowling economy
+- Interactive visualizations using Plotly
+
+### 🧠 Player Insights
+- Top batsmen by strike rate
+- Top bowlers by economy
+- Adjustable filters (min balls faced/bowled)
 
 ---
 
-## 🧠 Tech Stack
+## 🧠 Machine Learning
 
-- **Python**  
-- **Pandas, NumPy**  
-- **Scikit-learn**  
-- **Matplotlib / Plotly**  
+- Model: Random Forest Classifier
+- Features used:
+  - Team win percentage
+  - Batting strike rate
+  - Bowling economy
+  - Toss advantage
+  - Venue encoding
+- Evaluation:
+  - Accuracy
+  - Confusion Matrix
+
+---
+
+## 🛠️ Tech Stack
+
+- **Python**
+- **Pandas, NumPy**
+- **Scikit-learn**
 - **Streamlit**
+- **Plotly**
+- **Joblib**
 
----
-
-## 📂 Project Workflow
-
-1. **Data collection and preprocessing**  
-2. **Feature engineering** (teams, venue, past performance)  
-3. **Model training and evaluation**  
-4. **Prediction generation**  
-5. **Visualization through web dashboard**
-
----
-
-## 📊 Sample Use Cases
-
-- Predict the winner of an IPL match  
-- Analyze team strengths and weaknesses  
-- Explore historical match trends  
-
----
-
-## 🎯 Objective
-
-To demonstrate the application of machine learning in sports analytics with a focus on simplicity, usability, and meaningful insights.
